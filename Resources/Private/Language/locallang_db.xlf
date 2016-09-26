@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<xliff version="1.0">
+    <file source-language="en" datatype="plaintext" original="messages" date="2014-11-18T07:08:43Z" product-name="tnt_lightgallery">
+        <header/>
+        <body>
+            <trans-unit id="tx_tntlightgallery_domain_model_lightgallery">
+                <source>Light Gallery</source>
+            </trans-unit>
+            <trans-unit id="light_configs">
+                <source>Light Gallery Configurations</source>
+            </trans-unit>
+            <trans-unit id="light_isJqueryEnable">
+                <source>Enable Jquery</source>
+            </trans-unit>
+            <trans-unit id="light_imageCollector">
+                <source>Image Collections</source>
+            </trans-unit>
+            <trans-unit id="light_imageHeaderLabel">
+                <source>Link Text</source>
+            </trans-unit>
+        </body>
+    </file>
+</xliff>

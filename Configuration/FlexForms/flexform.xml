@@ -1,0 +1,159 @@
+
+<T3DataStructure>
+    <meta>
+        <langDisable>1</langDisable>
+    </meta>
+    <sheets>
+        <display>
+            <ROOT>
+                <TCEforms>
+                    <sheetTitle>LLL:EXT:tnt_lightgallery/Resources/Private/Language/locallang_db.xlf:light_configs</sheetTitle>
+                </TCEforms>
+                <type>array</type>
+                <el>
+                    <switchableControllerActions>
+                        <TCEforms>
+                            <label>Select The View</label>
+                            <config>
+                                <type>select</type>
+                                <items>
+                                    <numIndex index="0">
+                                        <numIndex index="0">Teaser View</numIndex>
+                                        <numIndex index="1">LightGallery->teaser;LightGallery->mainview;</numIndex>
+                                    </numIndex>
+                                    <numIndex index="1">                   
+                                        <numIndex index="0">Page View</numIndex>
+                                        <numIndex index="1">LightGallery->mainview;LightGallery->teaser;</numIndex>
+                                    </numIndex>
+                                </items>
+                            </config>
+                        </TCEforms>
+                    </switchableControllerActions>  
+                    <settings.isExtJquery>
+                        <TCEforms>
+                            <label>LLL:EXT:tnt_lightgallery/Resources/Private/Language/locallang_db.xlf:light_isJqueryEnable</label>
+                            <config>
+                                <type>check</type>
+                            </config>
+                        </TCEforms>
+                    </settings.isExtJquery>
+                    <settings.galleryHeaderLabel>
+                        <TCEforms>
+                            <label>LLL:EXT:tnt_lightgallery/Resources/Private/Language/locallang_db.xlf:light_imageHeaderLabel</label>
+                            <config>
+                                <type>input</type>
+                            </config>
+                        </TCEforms>
+                    </settings.galleryHeaderLabel>
+                    <settings.setImageCollection>
+                        <TCEforms>
+                            <label>LLL:EXT:tnt_lightgallery/Resources/Private/Language/locallang_db.xlf:light_imageCollector</label>
+                            <config>
+                                <type>select</type>
+                                <foreign_table>tx_tntlightgallery_domain_model_lightgallery</foreign_table>                                
+                                <size>10</size>
+                                <minitems>0</minitems>
+                                <maxitems>100</maxitems>
+                                <multiple>1</multiple>
+                            </config>
+                        </TCEforms>
+                    </settings.setImageCollection>
+                    <settings.archiveLabel>
+                        <TCEforms>
+                            <label>Archive Label Text</label>
+                            <config>
+                                <type>input</type>
+                            </config>
+                        </TCEforms>
+                    </settings.archiveLabel>
+                    <settings.archivePageLink>
+                        <TCEforms>
+                            <label>Archive Page Link</label>
+                            <config>
+                                <type>input</type>,
+                                <size>50</size>,
+                                <max>256</max>,
+                                <eval>trim</eval>,
+                                <wizards> 
+                                    <link> 
+                                        <type>popup</type>
+                                        <title>LLL:EXT:cms/locallang_ttc.xml:header_link_formlabel</title>
+                                        <icon>link_popup.gif</icon>
+                                        <!-- <script>browse_links.php?mode=wizard</script> -->
+                                        <module type="array">
+                                            <name>wizard_element_browser</name>
+                                            <urlParameters type="array">
+                                                <mode>wizard</mode>
+                                                <act>file</act>
+                                            </urlParameters>
+                                        </module>
+                                        <JSopenParams>height=300,width=500,status=0,menubar=0,scrollbars=1</JSopenParams>
+                                    </link> 
+                                </wizards>
+                                <softref>typolink</softref>
+                            </config>
+                        </TCEforms>
+                    </settings.archivePageLink>
+                     <settings.useThisCollections>
+                        <TCEforms>
+                            <label>Use Flexcollections</label>
+                            <config>
+                                <type>check</type>
+                            </config>
+                        </TCEforms>
+                    </settings.useThisCollections>
+                    <settings.imageCollection>
+                        <TCEforms>
+                            <label>LLL:EXT:tnt_lightgallery/Resources/Private/Language/locallang_db.xlf:light_imageCollector</label>
+                            <config>
+                                <type>inline</type>
+                                <appearance type="array">
+                                    <createNewRelationLinkTitle>LLL:EXT:tnt_lightgallery/Resources/Private/Language/locallang_db.xlf:light_imageCollector</createNewRelationLinkTitle>
+                                    <showPossibleLocalizationRecords>TRUE</showPossibleLocalizationRecords>
+                                    <showRemovedLocalizationRecords>TRUE</showRemovedLocalizationRecords>
+                                    <showSynchronizationLink>TRUE</showSynchronizationLink>
+                                    <enabledControls type="array">
+                                        <delete>TRUE</delete>
+                                        <dragdrop>TRUE</dragdrop>
+                                        <hide>TRUE</hide>
+                                        <info>TRUE</info>
+                                        <localize>TRUE</localize>
+                                    </enabledControls>
+                                    <headerThumbnail>
+                                        <field>uid_local</field>
+                                        <height>64</height>
+                                        <width>64</width>
+                                    </headerThumbnail>
+                                    <useSortable>TRUE</useSortable>
+                                </appearance>
+                                <behaviour type="array">
+                                    <localizationMode>select</localizationMode>
+                                    <localizeChildrenAtParentLocalization>1</localizeChildrenAtParentLocalization>
+                                </behaviour>
+                                <foreign_field>uid_foreign</foreign_field>
+                                <foreign_label>uid_local</foreign_label>
+                                <foreign_match_fields type="array">
+                                    <fieldname>tx_tnt_lightgallery</fieldname>
+                                </foreign_match_fields>
+                                <foreign_selector>uid_local</foreign_selector>
+                                <foreign_selector_fieldTcaOverride type="array">
+                                    <config type="array">
+                                        <appearance type="array">
+                                            <elementBrowserAllowed>gif,jpg,jpeg,tif,tiff,bmp,pcx,tga,png,ai</elementBrowserAllowed>
+                                            <elementBrowserType>file</elementBrowserType>
+                                        </appearance>
+                                    </config>
+                                </foreign_selector_fieldTcaOverride>
+                                <foreign_sortby>sorting_foreign</foreign_sortby>
+                                <foreign_table>sys_file_reference</foreign_table>
+                                <foreign_table_field>tablenames</foreign_table_field>
+                                <maxitems>100</maxitems>
+                                <minitems>0</minitems>
+                            </config>
+                        </TCEforms>
+                    </settings.imageCollection>
+                </el>
+            </ROOT>
+        </display>
+    </sheets>
+</T3DataStructure>

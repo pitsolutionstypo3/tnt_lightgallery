@@ -1,0 +1,28 @@
+
+<f:layout name="Default" />
+<f:section name="main">
+    <div class="references-block">
+    <h3>{configData.galleryHeaderLabel}</h3>
+    <ul class="img-list three-columns">
+        <f:for each="{collections}" key="keys" as="collection" iteration="itemIteration">
+            <li>
+                <figure>
+                    <a href="javascript:void(0);" class="dynamic" id="imageLink-{keys}">
+                    <f:for each="{collection}" as="collectionsingle" iteration="itemIteration1">
+                        <f:if condition="{collectionsingle.isPreview}">
+                            
+                            <f:image src="{collectionsingle.firstImage}" width="210" height="140" alt="{collection.galleryTitle}" />
+                        </f:if>               
+                    </f:for>
+                        </a>
+                    <figcaption>
+                        <strong class="title"><a href="javascript:void(0);" class="dynamic" id="link-{keys}"> {collection.galleryTitle}</a></strong></br>
+                        <strong>{collection.imageCount} <f:translate key="tx_tntlightgallery_domain_model_lightgallery.fotos">FOTOS</f:translate></strong>
+                    </figcaption>
+                </figure>
+            </li>
+        </f:for>
+    </ul>
+</div>
+
+</f:section>

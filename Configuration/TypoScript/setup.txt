@@ -1,0 +1,23 @@
+
+plugin.tx_tntlightgallery {
+	view {
+		templateRootPath = {$plugin.tx_tntlightgallery.view.templateRootPath}
+		partialRootPath = {$plugin.tx_tntlightgallery.view.partialRootPath}
+		layoutRootPath = {$plugin.tx_tntlightgallery.view.layoutRootPath}
+	}
+	persistence {
+		storagePid = {$plugin.tx_tntlightgallery.persistence.storagePid}
+	}
+	features {
+		# uncomment the following line to enable the new Property Mapper.
+		# rewrittenPropertyMapper = 1
+	}
+}
+page.includeCSS {
+ tx_tntlightgallery_file1= typo3conf/ext/tnt_lightgallery/Resources/Public/Css/lightGallery.css
+
+	}
+page.headerData.10 = TEXT
+page.headerData.10.value (
+ <script type="text/javascript" >contentArray  = new Array();</script>
+)

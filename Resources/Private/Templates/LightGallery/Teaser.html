@@ -1,0 +1,59 @@
+
+<f:layout name="Default" />
+<f:section name="main">
+    <div class="box">
+        <div class="heading">
+            <h2>{configData.galleryHeaderLabel}</h2>
+        </div>
+        <div class="content">
+            <ul class="news-list">
+                <f:if condition="{configData.useThisCollections}">
+                    <f:then>
+                        <li>
+                            <div class="img-holder">
+                                <a href="javascript:void(0);" class="dynamic" id="imageLink-{configData.contentId}">  
+                                    <f:for each="{collections}" as="collectionsingle" iteration="itemIteration1">
+                                        <f:if condition="{itemIteration1.isFirst}">
+                                            <f:image src="{collectionsingle.firstImage}" width="120" height="80" alt="{collection.galleryTitle}" />           
+                                        </f:if>
+                                    </f:for>
+                                </a>
+                            </div>
+                            <div class="descr">
+                                 <strong><f:count subject="{collections}" /> <f:translate key="tx_tntlightgallery_domain_model_lightgallery.fotos">FOTOS</f:translate></strong>
+                                <h2><a href="javascript:void(0);" class="dynamic" id="link-{configData.contentId}"> {configData.galleryHeaderLabel}</a></h2>
+                            </div>
+                        </li>
+                    </f:then>
+                    <f:else>
+                        <f:for each="{collections}" key="keys" as="collection" iteration="itemIteration">    
+                            <li>
+                                <div class="img-holder">
+                                    <a href="javascript:void(0);" class="dynamic" id="imageLink-{keys}">  
+                                        <f:for each="{collection}" as="collectionsingle" iteration="itemIteration1">
+                                            <f:if condition="{collectionsingle.isPreview}">
+                                                <f:image src="{collectionsingle.firstImage}" width="120" height="80" alt="{collection.galleryTitle}" />
+                                            </f:if>               
+                                        </f:for>
+                                    </a>
+                                </div>
+                                <div class="descr">
+                                    <strong>{collection.imageCount} <f:translate key="tx_tntlightgallery_domain_model_lightgallery.fotos">FOTOS</f:translate></strong>
+                                    <h2><a href="javascript:void(0);" class="dynamic" id="link-{keys}"> {collection.galleryTitle}</a></h2>
+                                </div>
+                            </li>
+                        </f:for>
+                    </f:else>
+                </f:if>
+
+            </ul>
+            <f:if condition="{configData.archivePageLink}">
+                <ul class="links-list">
+                    <li>
+                    <f:link.page pageUid="{configData.archivePageLink}">{configData.archiveLabel}</f:link.page>
+                    </li>
+                </ul> 
+            </f:if>
+        </div>
+    </div>
+</f:section>

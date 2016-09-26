@@ -1,0 +1,15 @@
+
+plugin.tx_tntlightgallery {
+	view {
+		# cat=plugin.tx_tntlightgallery/file; type=string; label=Path to template root (FE)
+		templateRootPath = EXT:tnt_lightgallery/Resources/Private/Templates/
+		# cat=plugin.tx_tntlightgallery/file; type=string; label=Path to template partials (FE)
+		partialRootPath = EXT:tnt_lightgallery/Resources/Private/Partials/
+		# cat=plugin.tx_tntlightgallery/file; type=string; label=Path to template layouts (FE)
+		layoutRootPath = EXT:tnt_lightgallery/Resources/Private/Layouts/
+	}
+	persistence {
+		# cat=plugin.tx_tntlightgallery//a; type=string; label=Default storage PID
+		storagePid =
+	}
+}

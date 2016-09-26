@@ -1,0 +1,97 @@
+{
+    "modules": [
+        {
+            "config": {
+                "position": [
+                    153,
+                    131
+                ]
+            },
+            "name": "New Model Object",
+            "value": {
+                "actionGroup": {
+                    "_default0_list": true,
+                    "_default1_show": true,
+                    "_default2_new_create": false,
+                    "_default3_edit_update": false,
+                    "_default4_delete": false,
+                    "customActions": [
+
+                    ]
+                },
+                "name": "LightGallery",
+                "objectsettings": {
+                    "addDeletedField": true,
+                    "addHiddenField": true,
+                    "addStarttimeEndtimeFields": true,
+                    "aggregateRoot": false,
+                    "categorizable": false,
+                    "description": "",
+                    "mapToTable": "",
+                    "parentClass": "",
+                    "sorting": false,
+                    "type": "Entity",
+                    "uid": "745015894885"
+                },
+                "propertyGroup": {
+                    "properties": [
+
+                    ]
+                },
+                "relationGroup": {
+                    "relations": [
+
+                    ]
+                }
+            }
+        }
+    ],
+    "properties": {
+        "backendModules": [
+
+        ],
+        "description": "TNT Light Gallery - Load Dynamically ",
+        "emConf": {
+            "category": "plugin",
+            "custom_category": "",
+            "dependsOn": "typo3 => 6.2\n",
+            "disableLocalization": false,
+            "disableVersioning": false,
+            "sourceLanguage": "en",
+            "state": "stable",
+            "targetVersion": "6.2",
+            "version": "1.0.0"
+        },
+        "extensionKey": "tnt_lightgallery",
+        "name": "TNT Light Gallery",
+        "originalExtensionKey": "",
+        "persons": [
+            {
+                "company": "TnT Graphics",
+                "email": "abin.s@tnt-graphics.com",
+                "name": "Abin Sabu",
+                "role": "Developer"
+            }
+        ],
+        "plugins": [
+            {
+                "actions": {
+                    "controllerActionCombinations": "",
+                    "noncacheableActions": "",
+                    "switchableActions": ""
+                },
+                "key": "Tntlightgallery",
+                "name": "TNTLightGallery"
+            }
+        ],
+        "vendorName": "TYPO3"
+    },
+    "wires": [
+
+    ],
+    "log": {
+        "last_modified": "2014-11-18 07:08",
+        "extension_builder_version": "6.2.0",
+        "be_user": " (1)"
+    }
+}

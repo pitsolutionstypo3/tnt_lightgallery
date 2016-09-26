@@ -1,0 +1,77 @@
+
+<T3DataStructure>
+    <meta>
+        <langDisable>1</langDisable>
+    </meta>
+    <sheets>
+        <display>
+            <ROOT>
+                <TCEforms>
+                    <sheetTitle>LLL:EXT:tnt_lightgallery/Resources/Private/Language/locallang_db.xlf:light_configs</sheetTitle>
+                </TCEforms>
+                <type>array</type>
+                <el>
+                    <settings.isExtJquery>
+                        <TCEforms>
+                            <label>LLL:EXT:tnt_lightgallery/Resources/Private/Language/locallang_db.xlf:light_isJqueryEnable</label>
+                            <config>
+                                <type>check</type>
+                            </config>
+                        </TCEforms>
+                    </settings.isExtJquery>
+                     <settings.galleryHeaderLabel>
+                        <TCEforms>
+                            <label>LLL:EXT:tnt_lightgallery/Resources/Private/Language/locallang_db.xlf:light_imageHeaderLabel</label>
+                            <config>
+                                <type>input</type>
+                            </config>
+                        </TCEforms>
+                    </settings.galleryHeaderLabel>
+                   <settings.imageCollection>
+                        <TCEforms>
+                            <label>LLL:EXT:tnt_lightgallery/Resources/Private/Language/locallang_db.xlf:light_imageCollector</label>
+                            <config>
+                                <type>inline</type>
+                                <maxitems>99</maxitems>
+                                <foreign_table>sys_file_reference</foreign_table>
+                                <!--<foreign_field>uid_foreign</foreign_field>-->
+                                <foreign_table_field>uid_foreign</foreign_table_field>
+                                <foreign_label>uid_local</foreign_label>
+                                <foreign_sortby>sorting_foreign</foreign_sortby>
+                                <foreign_selector>uid_local</foreign_selector>
+                                <foreign_selector_fieldTcaOverride type="array">
+                                    <config>
+                                        <appearance>
+                                            <elementBrowserType>file</elementBrowserType>
+                                            <elementBrowserAllowed>gif,jpg,jpeg,tif,tiff,bmp,pcx,tga,png</elementBrowserAllowed>
+                                            <collapseAll>true</collapseAll>
+                                        </appearance>
+                                    </config>
+                                </foreign_selector_fieldTcaOverride>
+                                <foreign_match_fields type="array">
+                                    <fieldname>flex_files</fieldname>
+                                </foreign_match_fields>
+                                <appearance type="array">
+                                    <newRecordLinkAddTitle>1</newRecordLinkAddTitle>
+                                    <headerThumbnail>
+                                        <field>uid_local</field>
+                                        <height>64</height>
+                                        <width>64</width>
+                                    </headerThumbnail>
+                                    <enabledControls type="array">
+										<info>0</info>
+										<new>1</new>
+										<dragdrop>1</dragdrop>
+										<sort>1</sort>
+										<hide>1</hide>
+										<delete>1</delete>
+  									</enabledControls>
+                                </appearance>
+                            </config>
+                        </TCEforms>
+                     </settings.imageCollection>                                              
+                </el>
+            </ROOT>
+        </display>
+    </sheets>
+</T3DataStructure>
