@@ -1,6 +1,6 @@
 <?php
 
-namespace TYPO3\TntLightgallery\Tests\Unit\Domain\Model;
+namespace TNT\TntLightgallery\Tests\Unit\Domain\Model;
 
 /***************************************************************
  *  Copyright notice
@@ -27,7 +27,7 @@ namespace TYPO3\TntLightgallery\Tests\Unit\Domain\Model;
  ***************************************************************/
 
 /**
- * Test case for class \TYPO3\TntLightgallery\Domain\Model\LightGallery.
+ * Test case for class \TNT\TntLightgallery\Domain\Model\LightGallery.
  *
  * @copyright Copyright belongs to the respective authors
  * @license http://www.gnu.org/licenses/gpl.html GNU General Public License, version 3 or later
@@ -36,12 +36,12 @@ namespace TYPO3\TntLightgallery\Tests\Unit\Domain\Model;
  */
 class LightGalleryTest extends \TYPO3\CMS\Core\Tests\UnitTestCase {
 	/**
-	 * @var \TYPO3\TntLightgallery\Domain\Model\LightGallery
+	 * @var \TNT\TntLightgallery\Domain\Model\LightGallery
 	 */
 	protected $subject = NULL;
 
 	protected function setUp() {
-		$this->subject = new \TYPO3\TntLightgallery\Domain\Model\LightGallery();
+		$this->subject = new \TNT\TntLightgallery\Domain\Model\LightGallery();
 	}
 
 	protected function tearDown() {

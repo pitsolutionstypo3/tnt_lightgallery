@@ -2,9 +2,10 @@
   "name": "pitsolutionstypo3/tnt_lightgallery",
   "description" : "LightBox Gallery Plugin",
   "license": "GPL-2.0+",
+  "type": "typo3-cms-extension",
   "autoload": {
-        "psr-4": {
-            "TYPO3\\TntLightgallery\\": "Classes"
-        }
+    "psr-4": {
+      "TNT\\TntLightgallery\\": "Classes"
     }
+  }
 }

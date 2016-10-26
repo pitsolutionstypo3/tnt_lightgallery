@@ -1,8 +1,7 @@
 <?php
+namespace TNT\TntLightgallery\Controller;
 
-namespace TYPO3\TntLightgallery\Controller;
-
-use TYPO3\TntLightgallery\Domain\Model;
+use TNT\TntLightgallery\Domain\Model;
 
 /* * *************************************************************
  *
@@ -37,7 +36,7 @@ class LightGalleryController extends \TYPO3\CMS\Extbase\Mvc\Controller\ActionCon
     /**
      * lightGalleryModel
      *
-     * @var TYPO3\TntLightgallery\Domain\Model
+     * @var TNT\TntLightgallery\Domain\Model
      */
     protected $lightGalleryModel;
 
@@ -47,7 +46,7 @@ class LightGalleryController extends \TYPO3\CMS\Extbase\Mvc\Controller\ActionCon
      * @return void
      */
     public function __construct() {
-        $this->lightGalleryModel = new \TYPO3\TntLightgallery\Domain\Model\LightGallery();
+        $this->lightGalleryModel = new \TNT\TntLightgallery\Domain\Model\LightGallery();
         $this->resourceFolders = $GLOBALS['TSFE']->baseUrl . "typo3conf/ext/tnt_lightgallery/Resources/Public/";
     }
 

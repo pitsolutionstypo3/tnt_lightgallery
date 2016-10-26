@@ -1,5 +1,5 @@
 <?php
-namespace TYPO3\TntLightgallery\Tests\Unit\Controller;
+namespace TNT\TntLightgallery\Tests\Unit\Controller;
 /***************************************************************
  *  Copyright notice
  *
@@ -25,14 +25,14 @@ namespace TYPO3\TntLightgallery\Tests\Unit\Controller;
  ***************************************************************/
 
 /**
- * Test case for class TYPO3\TntLightgallery\Controller\LightGalleryController.
+ * Test case for class TNT\TntLightgallery\Controller\LightGalleryController.
  *
  * @author Abin Sabu <abin.s@tnt-graphics.com>
  */
 class LightGalleryControllerTest extends \TYPO3\CMS\Core\Tests\UnitTestCase {
 
 	/**
-	 * @var \TYPO3\TntLightgallery\Controller\LightGalleryController
+	 * @var \TNT\TntLightgallery\Controller\LightGalleryController
 	 */
 	protected $subject = NULL;
 
@@ -66,7 +66,7 @@ class LightGalleryControllerTest extends \TYPO3\CMS\Core\Tests\UnitTestCase {
 	 * @test
 	 */
 	public function showActionAssignsTheGivenLightGalleryToView() {
-		$lightGallery = new \TYPO3\TntLightgallery\Domain\Model\LightGallery();
+		$lightGallery = new \TNT\TntLightgallery\Domain\Model\LightGallery();
 
 		$view = $this->getMock('TYPO3\\CMS\\Extbase\\Mvc\\View\\ViewInterface');
 		$this->inject($this->subject, 'view', $view);

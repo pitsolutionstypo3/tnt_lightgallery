@@ -1,6 +1,6 @@
 <?php
 
-namespace TYPO3\TntLightgallery\Domain\Model;
+namespace TNT\TntLightgallery\Domain\Model;
 
 /* * *************************************************************
  *
